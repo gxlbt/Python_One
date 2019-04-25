@@ -33,7 +33,7 @@ try:
                 '%94%B5%E5%8A%A8%E8%87%AA%E8%A1%8C%E8%BD%A6%E6%B3%A8%E5%86%8C%E7%99%BB%E8%AE%B0%E7%9B%AE%E5%BD%95')
     now_handle = browser.current_window_handle
 
-    for i in range(1, 974):  # 分页循环
+    for i in range(1,8):  # 分页循环
         '''
         当i=1时为第一页，不用判断点击下一页
         '''
@@ -109,6 +109,6 @@ try:
                 new_sheet.write(count + (j + 1), 13, tp)
                 new_sheet.write(count + (j + 1), 14, pc)
 finally:
-    new_workbook.save(r"test.xls")  # 保存此表
+    new_workbook.save(r"data02.xls")  # 保存此表
     time.sleep(3)
     browser.close()
